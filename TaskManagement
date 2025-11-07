@@ -1,0 +1,75 @@
+taskmanager/
+├─ config/
+│  ├─ DBPropertiesLoader.java
+│  ├─ AppConfig.java
+│  └─ AppConstants.java
+│
+├─ query/
+│  └─ QueryStore.java
+│
+├─ util/
+│  ├─ DBConnection.java
+│  ├─ CollectionsUtil.java
+│  ├─ IdGenerator.java
+│  └─ PaginationUtil.java
+│
+├─ validator/
+│  ├─ TaskValidator.java
+│  ├─ UserValidator.java
+│  └─ WorkflowValidator.java
+│
+├─ model/
+│  ├─ Task.java
+│  ├─ User.java
+│  ├─ WorkflowStep.java
+│  ├─ Notification.java
+│  └─ enums/
+│     ├─ Status.java
+│     ├─ Priority.java
+│     ├─ NotificationType.java
+│     └─ WorkflowStage.java
+│
+├─ dao/
+│  ├─ TaskDao.java
+│  ├─ UserDao.java
+│  ├─ NotificationDao.java
+│  └─ WorkflowDao.java
+│     └─ jdbc/
+│        ├─ TaskDaoImpl.java
+│        ├─ UserDaoImpl.java
+│        ├─ NotificationDaoImpl.java
+│        └─ WorkflowDaoImpl.java
+│
+├─ service/
+│  ├─ globaladmin/
+│  │  ├─ UserManagementService.java
+│  │  └─ TenantSettingsService.java
+│  ├─ admin/
+│  │  ├─ ProjectManagementService.java
+│  │  └─ WorkflowDesignService.java
+│  └─ user/
+│     ├─ TaskService.java
+│     └─ NotificationService.java
+│
+├─ controller/
+│  ├─ globaladmin/
+│  │  └─ UserMgmtController.java
+│  ├─ admin/
+│  │  └─ ProjectMgmtController.java
+│  └─ user/
+│     ├─ TaskController.java
+│     └─ NotificationController.java
+│
+├─ view/
+│  ├─ console/
+│  │  ├─ MenuView.java
+│  │  └─ TablePrinter.java
+│  └─ fx/ (if someday JavaFX UI)
+│
+├─ exception/
+│  ├─ DataAccessException.java
+│  ├─ ValidationException.java
+│  └─ BusinessRuleException.java
+│
+└─ main/
+   └─ AppMain.java
